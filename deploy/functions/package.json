@@ -1,0 +1,37 @@
+{
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "data": "node ./modules/updater.js",
+    "deployfront": "firebase deploy --only hosting",
+    "deployback": "firebase deploy --only functions",
+    "deploy": "firebase deploy --only functions,hosting",
+    "lint": "eslint .",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "logs": "firebase functions:log",
+    "dev": "concurrently \"firebase serve --only functions --port 8080\" \"node ./local-start\"",
+    "sync": "rsync -arzv ../. --exclude=node_modules --exclude=.git -e \"ssh -i ~/.ssh/google_compute_engine\" mlacher@35.227.27.158:home/"
+  },
+  "dependencies": {
+    "actions-on-google": "^2.11.0",
+    "dialogflow": "^0.10.3",
+    "dotenv": "^8.0.0",
+    "firebase-admin": "^8.3.0",
+    "firebase-functions": "^3.2.0",
+    "googleapis": "^42.0.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "ngrok": "^3.2.4",
+    "npm": "^6.10.3"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "private": true
+}

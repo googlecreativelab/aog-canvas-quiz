@@ -1,0 +1,46 @@
+.question-title {
+	font-family: 'Playfair Display', serif;
+	font-size: 75px;
+	color: #ffffff;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 88px;
+}
+
+.answer {
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 45px;
+	font-weight: 700;
+	color: #495fbc;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 120.75px;
+}
+
+.number {
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 42px;
+	color: #ffffff;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 100px;
+}
+
+.copy {
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 31px;
+	color: #000000;
+	letter-spacing: 0;
+	line-height: 40px;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	overflow: hidden;
+}
+
+* {
+	box-sizing: border-box;
+}

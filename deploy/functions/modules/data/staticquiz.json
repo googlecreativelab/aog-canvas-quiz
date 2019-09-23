@@ -1,0 +1,534 @@
+{
+    "questions": [
+        {
+            "question": "What color is the sky?",
+            "answers": [
+                "Blue"
+            ],
+            "wrongAnswers": [
+                "Red",
+                "Green"
+            ],
+            "index": 0
+        },
+        {
+            "question": "Name two colors in the rainbow.",
+            "mustHave": "2",
+            "answers": [
+                "Red",
+                "Orange",
+                "Yellow",
+                "Green",
+                "Blue",
+                "Indigo",
+                "Violet"
+            ],
+            "wrongAnswers": [
+                "Black",
+                "Puse",
+                "Cobalt"
+            ],
+            "index": 1
+        },
+        {
+            "question": "What does a dog say?",
+            "answers": [
+                "Woof"
+            ],
+            "wrongAnswers": [
+                "Meow",
+                "Roar"
+            ],
+            "index": 2
+        },
+        {
+            "question": "What is the third planet from the Sun?",
+            "answers": [
+                "Earth"
+            ],
+            "wrongAnswers": [
+                "Mars",
+                "Jupiter",
+                "Venus"
+            ],
+            "index": 3
+        },
+        {
+            "question": "Name a fruit that is red",
+            "answers": [
+                "Strawberry",
+                "Raspberry",
+                "Apple",
+                "Pomegranate"
+            ],
+            "wrongAnswers": [
+                "Banana",
+                "Lemon",
+                "Orange"
+            ],
+            "index": 4
+        },
+        {
+            "question": "What do you wear on your feet?",
+            "answers": [
+                "Shoes",
+                "Socks",
+                "Sandals"
+            ],
+            "wrongAnswers": [
+                "Gloves",
+                "Hats",
+                "Pants"
+            ],
+            "index": 5
+        }
+    ],
+    "answers": [
+        {
+            "value": "Blue",
+            "shortDescription": "The sky is blue. At least during daytime.",
+            "image": "placeholder.png",
+            "image_alt": "placeholder_square.png",
+            "index": 0
+        },
+        {
+            "value": "Red",
+            "index": 1
+        },
+        {
+            "value": "Orange",
+            "index": 2
+        },
+        {
+            "value": "Yellow",
+            "index": 3
+        },
+        {
+            "value": "Green",
+            "index": 4
+        },
+        {
+            "value": "Blue",
+            "index": 5
+        },
+        {
+            "value": "Indigo",
+            "index": 6
+        },
+        {
+            "value": "Violet",
+            "index": 7
+        },
+        {
+            "value": "Woof",
+            "shortDescription": "You could also say \"bark\" or \"growl\" as an answer for this question.",
+            "image": "placeholder.png",
+            "learnMore": "bark | growl",
+            "index": 8
+        },
+        {
+            "value": "Earth",
+            "shortDescription": "Earth is the third planet from the sun",
+            "image": "placeholder.png",
+            "index": 9
+        },
+        {
+            "value": "Strawberry",
+            "shortDescription": "Strawberries are red fruit.",
+            "image": "placeholder.png",
+            "learnMore": "Strawberries",
+            "index": 10
+        },
+        {
+            "value": "Raspberry",
+            "shortDescription": "Raspberries are red fruit.",
+            "image": "placeholder.png",
+            "learnMore": "Raspberries",
+            "index": 11
+        },
+        {
+            "value": "Apple",
+            "shortDescription": "Apples are red fruit (sometimes).",
+            "image": "placeholder.png",
+            "learnMore": "Apples",
+            "index": 12
+        },
+        {
+            "value": "Pomegranate",
+            "shortDescription": "Pomegranates are red fruit.",
+            "image": "placeholder.png",
+            "learnMore": "Pomegranates",
+            "index": 13
+        },
+        {
+            "value": "Shoes",
+            "shortDescription": "Here's some more information about shoes.",
+            "learnMore": "Boots",
+            "index": 14
+        },
+        {
+            "value": "Socks",
+            "shortDescription": "Here's some more information about socks.",
+            "index": 15
+        },
+        {
+            "value": "Sandals",
+            "shortDescription": "Here's some more information about sandals.",
+            "learnMore": "Flip flops",
+            "index": 16
+        }
+    ],
+    "misc": [
+        {
+            "id": "intro",
+            "text": [
+                "Hi, this is sample content for Canvas Quiz. I'm going to ask you a few very easy questions."
+            ],
+            "index": 0
+        },
+        {
+            "id": "intro welcome back",
+            "text": [
+                "Welcome back. The user hears this if they used the quiz recently."
+            ],
+            "index": 1
+        },
+        {
+            "id": "homeHeadline",
+            "text": [
+                "How do you want to study?"
+            ],
+            "index": 2
+        },
+        {
+            "id": "mcBtn",
+            "text": [
+                "Easy (Multiple choice)"
+            ],
+            "index": 3
+        },
+        {
+            "id": "freeBtn",
+            "text": [
+                "Hard (Open answer)"
+            ],
+            "index": 4
+        },
+        {
+            "id": "quiz type fallback",
+            "text": [
+                "Do you want to try multiple choice questions or free answer?"
+            ],
+            "index": 5
+        },
+        {
+            "id": "start mc",
+            "text": [
+                "Okay, let's get started with multiple choice."
+            ],
+            "index": 6
+        },
+        {
+            "id": "start free",
+            "text": [
+                "Okay, let's get started with free answer."
+            ],
+            "index": 7
+        },
+        {
+            "id": "restart mc",
+            "text": [
+                "Okay, here are more multiple choice questions."
+            ],
+            "index": 8
+        },
+        {
+            "id": "restart free",
+            "text": [
+                "Okay, here are more free answer questions."
+            ],
+            "index": 9
+        },
+        {
+            "id": "id",
+            "text": [
+                "text"
+            ],
+            "audio": [
+                "audio"
+            ],
+            "index": 10
+        },
+        {
+            "id": "correct headline",
+            "text": [
+                "That's right!",
+                "Correct!",
+                "Nice!",
+                "Good job!",
+                "You got it!"
+            ],
+            "index": 11
+        },
+        {
+            "id": "correct",
+            "text": [
+                "That's right!",
+                "Correct!",
+                "Nice!",
+                "Good job!",
+                "You got it!",
+                "Exactly!",
+                "Right on!",
+                "Right!"
+            ],
+            "index": 12
+        },
+        {
+            "id": "moreinfo single",
+            "text": [
+                "Here's more information.",
+                "Here's more about that."
+            ],
+            "index": 13
+        },
+        {
+            "id": "moreinfo multiple",
+            "text": [
+                "Here are the answers you could have said."
+            ],
+            "index": 14
+        },
+        {
+            "id": "incorrect headline",
+            "text": [
+                "Not quite.",
+                "That's not right."
+            ],
+            "index": 15
+        },
+        {
+            "id": "incorrect headline retry",
+            "text": [
+                "Not quite. Try again?"
+            ],
+            "index": 16
+        },
+        {
+            "id": "retry ask",
+            "text": [
+                "Want to guess again?",
+                "Want another try?",
+                "Want to try again?"
+            ],
+            "index": 17
+        },
+        {
+            "id": "continue prompt",
+            "text": [
+                "Ready for the next question?",
+                "Want the next question?",
+                "Ready for the next one?"
+            ],
+            "index": 18
+        },
+        {
+            "id": "next button",
+            "text": [
+                "Next Question"
+            ],
+            "index": 19
+        },
+        {
+            "id": "see score button",
+            "text": [
+                "See My Score"
+            ],
+            "index": 20
+        },
+        {
+            "id": "correct sfx",
+            "index": 21
+        },
+        {
+            "id": "incorrect sfx",
+            "index": 22
+        },
+        {
+            "id": "id",
+            "text": [
+                "text"
+            ],
+            "audio": [
+                "audio"
+            ],
+            "index": 23
+        },
+        {
+            "id": "quiz done",
+            "text": [
+                "That's the end of the quiz. Want to know how you did?"
+            ],
+            "index": 24
+        },
+        {
+            "id": "pass feedback",
+            "text": [
+                "You scored enough to pass."
+            ],
+            "index": 25
+        },
+        {
+            "id": "fail feedback",
+            "text": [
+                "You didn't score enough to pass."
+            ],
+            "index": 26
+        },
+        {
+            "id": "restart ask",
+            "text": [
+                "Want to try more questions?"
+            ],
+            "index": 27
+        },
+        {
+            "id": "perfect",
+            "text": [
+                "Perfect!"
+            ],
+            "index": 28
+        },
+        {
+            "id": "good",
+            "text": [
+                "Great work."
+            ],
+            "index": 29
+        },
+        {
+            "id": "okay",
+            "text": [
+                "Not bad."
+            ],
+            "index": 30
+        },
+        {
+            "id": "bad",
+            "text": [
+                "You have to practice more"
+            ],
+            "index": 31
+        },
+        {
+            "id": "perfect-sfx",
+            "index": 32
+        },
+        {
+            "id": "good-sfx",
+            "index": 33
+        },
+        {
+            "id": "okay-sfx",
+            "index": 34
+        },
+        {
+            "id": "bad-sfx",
+            "index": 35
+        },
+        {
+            "id": "next round button",
+            "text": [
+                "Try another round"
+            ],
+            "index": 36
+        },
+        {
+            "id": "stop button",
+            "text": [
+                "I'm done"
+            ],
+            "index": 37
+        },
+        {
+            "id": "id",
+            "text": [
+                "text"
+            ],
+            "audio": [
+                "audio"
+            ],
+            "index": 38
+        },
+        {
+            "id": "starting over",
+            "text": [
+                "Okay. Starting over."
+            ],
+            "index": 39
+        },
+        {
+            "id": "another round",
+            "text": [
+                "Okay. Here's another set of questions."
+            ],
+            "index": 40
+        },
+        {
+            "id": "next question",
+            "text": [
+                "Okay. Next question."
+            ],
+            "index": 41
+        },
+        {
+            "id": "previous question",
+            "text": [
+                "Okay. Here's the last question."
+            ],
+            "index": 42
+        },
+        {
+            "id": "not ready for next",
+            "text": [
+                "Okay. You can say \"next question\" when you're ready. Or start over."
+            ],
+            "index": 43
+        },
+        {
+            "id": "skip retry",
+            "text": [
+                "Okay."
+            ],
+            "index": 44
+        },
+        {
+            "id": "dont know",
+            "text": [
+                "No problem."
+            ],
+            "index": 45
+        },
+        {
+            "id": "fallback",
+            "text": [
+                "Sorry, I didn't get that."
+            ],
+            "index": 46
+        },
+        {
+            "id": "about headline",
+            "text": [
+                "About page"
+            ],
+            "index": 47
+        },
+        {
+            "id": "about body",
+            "text": [
+                "This has content about your quiz"
+            ],
+            "index": 48
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+  "functions": {
+    "predeploy": [
+      "node ./functions/modules/updater.js $GCLOUD_PROJECT"
+    ]
+
+  },
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "headers": [ {
+      "source": "**/*.@(jpg|jpeg|png|svg|eot|otf|ttf|ttc|woff|font.css)",
+      "headers": [ {
+        "key": "Access-Control-Allow-Origin",
+        "value": "*"
+      } ]
+    }]
+  }
+}
