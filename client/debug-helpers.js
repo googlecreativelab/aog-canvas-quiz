@@ -30,44 +30,39 @@ function start() {
 }
 function showQuestionMultiple() {
 	window.game.sendAction({
-		headline: 'What are two rights in the Declaration of Independence?',
+		headline: 'This is a question with two answers',
 		qType: 'Easy',
 		mustHave: '2',
 		answerOptions: {
 			list: [
 				{
-					title: 'The Right to Bear Arms',
-					key: 'The Right to Bear Arms',
+					title: 'Option One',
+					key: 'Option One',
 					card: {
-						title: 'The right to bear arms',
+						title: 'Option One',
 						text:
-							'The Second Amendment to the United States Constitution protects an individual right to keep and bear arms.',
-						link: {
-							title: 'Search on Google',
-							url:
-								'https://www.google.com/search?q=second+amendment'
-						}
+							'A card about option one.'
 					}
 				},
 				{
-					title: 'Life',
-					key: 'Life',
+					title: 'Option Two',
+					key: 'Option Two',
 					correct: true,
 					card: {
-						moreTitles: ['Liberty', 'The pursuit of happiness']
+						moreTitles: ['Option Three']
 					}
 				},
 				{
-					title: 'Liberty',
-					key: 'Liberty',
+					title: 'Option Three',
+					key: 'Option Three',
 					correct: true,
 					card: {
-						moreTitles: ['Life', 'The pursuit of happiness']
+						moreTitles: ['Option Two']
 					}
 				},
 				{
-					title: 'Press',
-					key: 'Press'
+					title: 'Option Four',
+					key: 'Option Four'
 				}
 			]
 		},
@@ -81,63 +76,56 @@ function showQuestion() {
 		totalQs: 10,
 		score: 0,
 		qNum: 0,
-		headline: 'Name one war fought by the United States in the 1800s.',
+		headline: 'This is a question',
 		answerOptions: {
 			list: [
 				{
-					title: 'Spanish-American War',
-					key: 'Spanish-American War',
-					correct: true,
-					card: {
-						moreTitles: [
-							'Mexican-American War',
-							'Civil War',
-							'War of 1812'
-						]
-					}
+					title: 'Option One',
+					key: 'Option One',
+					correct: true
 				},
 				{
-					title: 'The Revolutionary War',
-					key: 'the Revolutionary War'
+					title: 'Option Two',
+					key: 'Option Two'
 				},
-				{ key: 'World War I', title: 'World War I' }
+				{ key: 'Option Three', title: 'Option Three' }
 			]
 		},
 		qType: 'Easy'
 	});
 }
-function showQuestion6() {
+function threeAnswers() {
 	window.game.sendAction({
 		totalQs: 10,
 		score: 0,
 		qNum: 0,
 		mustHave: '3',
-		headline: 'Name three of the original thirteen colonies:',
+		headline: 'This is a question with three answers',
 		answerOptions: {
 			list: [
 				{
-					title: 'Texas',
-					key: 'Texas'
+					title: 'One',
+					key: 'One'
 				},
 				{
-					title: 'New Jersey',
-					key: 'New Jersey'
+					title: 'Two',
+					key: 'Two'
 				},
 				{
-					key: 'West Virginia',
-					title: 'West Virginia'
+					key: 'Three',
+					title: 'Three'
 				},
 				{
-					title: 'Ohio',
-					key: 'Ohio'
+					title: 'Four',
+					key: 'Four'
 				},
 				{
-					title: 'Rhode Island',
-					key: 'Rhode Island'
+					title: 'Five',
+					key: 'Five'
 				},
 				{
-					title: 'Georgia',
-					key: 'Georgia'
+					title: 'Six',
+					key: 'Six'
 				}
 			]
 		},
@@ -151,79 +139,22 @@ function showLongQuestion() {
 		score: 0,
 		qNum: 0,
 		headline:
-			"Lorem Ipsum is simply dummy text. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+			"This is a question that is very long. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
 		answerOptions: {
 			list: [
 				{
-					title: 'Spanish-American War',
-					key: 'Spanish-American War',
-					correct: true,
-					card: {
-						moreTitles: [
-							'Mexican-American War',
-							'Civil War',
-							'War of 1812'
-						]
-					}
+					title: 'One',
+					key: 'One',
+					correct: true
 				},
 				{
-					title: 'The Revolutionary War',
-					key: 'the Revolutionary War'
+					title: 'Two',
+					key: 'Two'
 				},
-				{ key: 'World War I', title: 'World War I' }
+				{ key: 'Three', title: 'Three' }
 			]
 		},
 		qType: 'Easy'
-	});
-}
-
-function showQuestionWithTallImage() {
-	window.game.sendAction({
-		totalQs: 10,
-		score: 1,
-		suggestions: ['Next question'],
-		headline: "That's right!",
-		qNum: 0,
-		card: {
-			title: 'The Constitution',
-			image:
-				'https://civicstest-dev.firebaseapp.com/images/constitution.jpeg',
-			text:
-				'The United States Constitution is the supreme law of the United States.',
-			link: {
-				url:
-					'https://www.google.com/search?q=United+States+Constitution',
-				title: 'Search on Google'
-			}
-		},
-		correctAnswers: ['The Constitution'],
-		result: 'correct',
-		nextBtn: 'Next Question'
-	});
-}
-
-function showQuestionWithShortImage() {
-	window.game.sendAction({
-		card: {
-			title: 'We the people',
-			image:
-				'https://upload.wikimedia.org/wikipedia/commons/0/0d/Constitution_We_the_People.jpg',
-			text:
-				'"We the people" are the first three words of the United States Constitution.',
-			link: {
-				url:
-					'https://www.google.com/search?q=United+States+Constitution',
-				title: 'Search on Google'
-			}
-		},
-		correctAnswers: ['We the people'],
-		result: 'correct',
-		nextBtn: 'Next Question',
-		totalQs: 10,
-		score: 3,
-		suggestions: ['Next question'],
-		qNum: 2,
-		headline: "That's right!"
 	});
 }
 
@@ -241,10 +172,10 @@ function correct() {
 		qNum: 0,
 		headline: "That's right!",
 		correctAnswers: [
-			'Spanish-American War',
-			'Mexican-American War',
-			'Civil War',
-			'War of 1812'
+			'Answer one',
+			'Answer two',
+			'Answer three',
+			'Answer four'
 		]
 	});
 }
@@ -260,7 +191,7 @@ function incorrect() {
 		headline: 'Not quite.',
 		options: ['Try again', 'Show me the answer'],
 		prompt: 'Not quite. Try again?',
-		correctAnswers: ['slavery', 'economic reasons', 'states’ rights']
+		correctAnswers: ['Answer one', 'answer two', 'answer three']
 	});
 }
 function correctWithMoreAnswers() {
@@ -268,21 +199,17 @@ function correctWithMoreAnswers() {
 		headline: "That's right!",
 		qNum: 2,
 		correctAnswers: [
-			'saved the Union',
-			'led the United States during the Civil War',
-			'freed the slaves'
+			'Answer one',
+			'Answer two',
+			'Answer three'
 		],
 		list: {
 			list: [
 				false,
 				false,
 				{
-					link: {
-						url: 'https://google.com/search?q=Freed the slaves',
-						title: 'Search on Google'
-					},
-					title: 'Freed the slaves',
-					text: 'info about emancipation proclamation'
+					title: 'Answer three',
+					text: 'info about answer three'
 				}
 			],
 			title: 'Possible answers:'
@@ -303,14 +230,10 @@ function showMeTheAnswer() {
 		suggestions: ['Next question'],
 		qNum: 3,
 		headline: 'Not quite.',
-		correctAnswers: ['freed the slaves'],
+		correctAnswers: ['answer one'],
 		card: {
-			link: {
-				url: 'https://google.com/search?q=Freed the slaves',
-				title: 'Search on Google'
-			},
-			title: 'Freed the slaves',
-			text: 'info about emancipation proclamation'
+			title: 'Answer one',
+			text: 'info about answer one'
 		}
 	});
 }
@@ -318,20 +241,15 @@ function showMeTheAnswer() {
 function lastResults() {
 	window.game.sendAction( {
 		correctAnswers: [
-			'You can practice any religion, or not practice a religion'
+			'Answer one'
 		],
 		headline: "That's right!",
 		result: 'correct',
 		nextBtn: 'See My Score',
 		card: {
-			title: 'You can practice any religion, or not practice a religion',
+			title: 'Answer one',
 			text:
-				'Freedom of religion means you can practice any religion, or not practice a religion.',
-			link: {
-				title: 'Search on Google',
-				url:
-					'https://www.google.com/search?ei=Xzh0XNH7Hqbb5gLZ77HAAw&q=freedom+of+religon'
-			}
+				'Info about answer one.'
 		},
 		suggestions: ['Yes'],
 		qNum: 9,
@@ -342,59 +260,25 @@ function lastResults() {
 
 function hardMode() {
 	window.game.sendAction({
-		headline: 'What is the supreme law of the land?',
+		headline: 'This is a free answer question',
 		qType: 'Hard',
 		answerOptions: {
 			list: [
 				{
-					title: 'The Declaration of Independence',
-					key: 'The Declaration of Independence'
+					title: 'Answer one',
+					key: 'Answer one'
 				},
 				{
-					title: 'The Constitution',
-					key: 'The Constitution',
-					card: {
-						title: 'The Constitution',
-						image:
-							'https://civicstest-dev.firebaseapp.com/images/constitution.jpeg',
-						image_alt:
-							'https://civicstest-dev.firebaseapp.com/images/alt_image_here',
-						text:
-							'The United States Constitution is the supreme law of the United States.',
-						link: {
-							title: 'Search on Google',
-							url:
-								'https://www.google.com/search?q=United+States+Constitution'
-						}
-					},
+					title: 'Answer two',
+					key: 'Answer two',
 					correct: true
 				},
 				{
-					title: 'The Bill of Rights',
-					key: 'The Bill of Rights',
-					card: {
-						title: 'The Bill of Rights',
-						image:
-							'https://t1.gstatic.com/images?q=tbn:ANd9GcQbUwnk99-0EsYdWBUTjR_0zoE6ZD7vlW3ZvFY72nPmoJlfTKFv',
-						text:
-							'The Bill of Rights in the United States is the first ten amendments to the United States Constitution.',
-						link: {
-							title: 'Search on Google',
-							url:
-								'https://www.google.com/search?ei=Ljh0XI6ME9G05gLP3YrQBg&q=the+bill+of+rights'
-						}
-					}
+					title: 'Answer three',
+					key: 'Answer three'
 				}
 			]
 		},
-		terms: [
-			{
-				term: 'Supreme law',
-				definition:
-					'Supreme law means the laws that are the most powerful in a country. They overule state and local laws.',
-				url: 'https://www.google.com/search?q=undefined'
-			}
-		],
 		qNum: 0,
 		totalQs: 10,
 		score: 0
@@ -413,81 +297,77 @@ function gameOver() {
 		qType: 'Easy',
 		results: [
 			{
-				question: 'Name the U.S. war between the North and the South.',
+				question: 'Question one',
 				userAnswers: [],
 				correct: false,
-				correctAnswers: ['The Civil War']
+				correctAnswers: ['Answer one']
 			},
 			{
-				question: 'Name one problem that led to the Civil War.',
+				question: 'Question two',
 				userAnswers: [],
 				correct: false,
 				correctAnswers: [
-					'slavery',
-					'economic reasons',
-					'states’ rights'
+					'Answer one',
+					'Answer two',
+					'Answer three'
 				]
 			},
 			{
 				question:
-					'What was one important thing that Abraham Lincoln did?',
+					'Question three',
 				userAnswers: [],
 				correct: false,
 				correctAnswers: [
-					'freed the slaves',
-					'saved the Union',
-					'led the United States during the Civil War'
+					'Answer one',
+					'Answer two',
+					'Answer three'
 				]
 			},
 			{
-				correctAnswers: ['freed the slaves'],
-				question: 'What did the Emancipation Proclamation do?',
+				correctAnswers: ['Answer one'],
+				question: 'Question four',
 				userAnswers: [],
 				correct: false
 			},
 			{
-				question: 'What did Susan B. Anthony do?',
+				question: 'Question five',
 				userAnswers: [],
 				correct: false,
-				correctAnswers: ['fought for women’s rights']
+				correctAnswers: ['Answer one']
 			},
 			{
 				correct: false,
 				correctAnswers: [
-					'World War I',
-					'World War II',
-					'Korean War',
-					'Vietnam War',
-					'Gulf War'
+					'Answer one'
 				],
 				question:
-					'Name one war fought by the United States in the 1900s.',
+					'Question six',
 				userAnswers: []
 			},
 			{
 				correct: false,
-				correctAnswers: ['Woodrow Wilson'],
-				question: 'Who was President during World War I?',
+				correctAnswers: ['Answer one'],
+				question: 'Question seven',
 				userAnswers: []
 			},
 			{
-				correctAnswers: ['Franklin Roosevelt'],
+				correctAnswers: ['Answer one'],
 				question:
-					'Who was President during the Great Depression and World War II?',
+					'Question eight',
 				userAnswers: [],
 				correct: false
 			},
 			{
 				question:
-					'Who did the United States fight in World War II? Pick three.',
+					'Question nine',
 				userAnswers: [],
 				correct: false,
-				correctAnswers: ['Japan', 'Germany', 'Italy']
+				correctAnswers: ['Answer one', 'Answer two']
 			},
 			{
-				correctAnswers: ['World War II'],
+				correctAnswers: ['Answer one'],
 				question:
-					'Before he was President, Eisenhower was a general. What war was he in?',
+					'Question ten',
 				userAnswers: [],
 				correct: false
 			}
@@ -503,30 +383,26 @@ function gameOver() {
 
 window.start = start;
 window.showQuestion = showQuestion;
-window.showQuestion6 = showQuestion6;
+window.threeAnswers = threeAnswers;
 window.showLongQuestion = showLongQuestion;
 window.correct = correct;
 window.incorrect = incorrect;
 window.correctWithMoreAnswers = correctWithMoreAnswers;
 window.showMeTheAnswer = showMeTheAnswer;
 window.gameOver = gameOver;
-window.showQuestionWithShortImage = showQuestionWithShortImage;
-window.showQuestionWithTallImage = showQuestionWithTallImage;
 window.showQuestionMultiple = showQuestionMultiple;
 window.lastResults = lastResults;
 window.hardMode = hardMode;
 console.log([
 	'start()',
 	'showQuestion()',
-	'showQuestion6()',
-	'showQuestionWithTallImage()',
-	'showQuestionWithShortImage()',
 	'correct()',
 	'incorrect()',
 	'correctWithMoreAnswers()',
 	'showMeTheAnswer()',
 	'gameOver()',
 	'showQuestionMultiple()',
+	'threeAnswers()',
 	'lastResults()',
 	'hardMode()',
 	'showLongQuestion()'
