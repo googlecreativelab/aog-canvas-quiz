@@ -1,3 +1,16 @@
+<table>
+  <tr>
+    <td>
+      This project is no longer actively maintained by the Google Creative Lab but remains here in a read-only Archive mode so that it can continue to assist developers that may find the examples helpful. We aren’t able to address all pull requests or bug reports but outstanding issues will remain in read-only mode for reference purposes. Also, please note that some of the dependencies may not be up to date and there hasn’t been any QA done in a while so your mileage may vary.
+      <br><br>
+      For more details on how Archiving affects Github repositories see <a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-archiving-repositories">this documentation </a>.
+      <br><br>
+      <b>We welcome users to fork this repository</b> should there be more useful, community-driven efforts that can help continue what this project began.
+    </td>
+  </tr>
+</table>
+
+
 # Canvas Quiz
 
 Canvas Quiz is a starter kit for developers to make custom, voice-enabled question-answer games for the Google Assistant. It uses Interactive Canvas, so you can create your own custom graphics and animations. Just deploy the code, put your questions and answers in a Google Sheet, and you’ll have your own quiz up and running.
